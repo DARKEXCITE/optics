@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* montserrat-regular - cyrillic */
 
 @font-face {
@@ -405,8 +407,23 @@ body {
           flex-direction: column;
 }
 
+.section__title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.waves {
+  background: url("../img/waves.png") no-repeat;
+  background-position: left 50% top -60px;
+  background-size: cover;
+}
+
 .header {
   padding-top: 30px;
+  margin-bottom: 55px;
 }
 
 .header__nav {
@@ -427,6 +444,13 @@ body {
   font-size: 16px;
   line-height: 29px;
   color: black;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.header__nav-link:hover {
+  color: #26c6da;
 }
 
 .header__nav::after {
@@ -578,6 +602,10 @@ body {
   margin-bottom: 55px;
 }
 
+.header__menu .menu {
+  cursor: pointer;
+}
+
 .header__menu .menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,6 +679,277 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
+}
+
+.header__carousel-controls .prev,
+.header__carousel-controls .next {
+  cursor: pointer;
+}
+
+.catalog {
+  margin-bottom: 110px;
+}
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.catalog__item {
+  height: 172px;
+  border-radius: 20px;
+  border: 3px solid #26c6da;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.catalog__item::after {
+  content: 'Очки';
+  display: inline;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #26c6da;
+}
+
+.catalog__item_glasses {
+  background-image: url("../img/catalog/glasses.jpg");
+  background-position: left -45px top -10px;
+  background-size: 135%;
+}
+
+.catalog__item_glasses:hover {
+  background-position: left -55px top -20px;
+  background-size: 145%;
+}
+
+.catalog__item_lenses {
+  background-image: url("../img/catalog/lenses.jpg");
+  background-position: left -45px top 0;
+  background-size: 120%;
+}
+
+.catalog__item_lenses:hover {
+  background-position: left -55px top -10px;
+  background-size: 130%;
+}
+
+.catalog__item_lenses::after {
+  content: 'Линзы';
+}
+
+.catalog__item_rims {
+  background-image: url("../img/catalog/rims.jpg");
+  background-position: left -50px top 0;
+  background-size: 175%;
+}
+
+.catalog__item_rims::after {
+  content: 'Оправы';
+}
+
+.catalog__item_rims:hover {
+  background-position: left -60px top -10px;
+  background-size: 185%;
+}
+
+.catalog__item_cases {
+  background-color: #e7ebf9;
+  background-image: url("../img/catalog/cases.jpg");
+  background-position: left -35px top 15px;
+  background-size: 130%;
+}
+
+.catalog__item_cases::after {
+  content: 'Футляры';
+}
+
+.catalog__item_cases:hover {
+  background-position: left -45px top 5px;
+  background-size: 140%;
+}
+
+.testimonials {
+  margin-bottom: 110px;
+}
+
+.testimonials__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.testimonials__item {
+  padding: 50px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.testimonials__item img {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 15px;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.testimonials__item:hover img {
+  opacity: 0;
+  margin: 0;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.testimonials__item:hover .testimonials__description {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.testimonials__item:first-child:hover .testimonials__description {
+  -webkit-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+          transform: translateY(-150%);
+}
+
+.testimonials__description {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #26c6da;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.recommendation {
+  height: 500px;
+  margin-bottom: 110px;
+}
+
+.glasses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.glasses__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.glasses__item-thumb {
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: #fff;
+  border: 3px solid #26c6da;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.glasses__item-thumb .glasses__to-favorites {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+}
+
+.glasses__item-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.glasses__item-description ul {
+  max-width: 170px;
+}
+
+.glasses__item-description li:first-child {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.glasses__item-description li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.glasses__item-description span {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+.glasses__item-btn {
+  display: block;
+  color: #ff5722;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: bold;
+  border: 3px solid #26c6da;
+  border-radius: 16.5px;
+  text-align: center;
+  margin-top: auto;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.glasses__item-btn:hover {
+  background-color: #26c6da;
+  color: #fff;
 }
 
 @media (max-width: 767.98px) {
