@@ -151,7 +151,12 @@ headerCarousel.owlCarousel({
     items: 1,
     margin: 200,
     dots: false,
-    smartSpeed: 1000
+    loop: true,
+    smartSpeed: 1500,
+    mouseDrag: false,
+    touchDrag: false,
+    autoplay: true,
+    autoplayTimeout: 6000
 });
 
 $('#headerSliderNext').click(function() {
