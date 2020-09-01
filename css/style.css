@@ -416,9 +416,14 @@ body {
 }
 
 .waves {
-  background: url("../img/waves.png") no-repeat;
+  background: url("../img/waves/waves.png") no-repeat;
   background-position: left 50% top -60px;
   background-size: cover;
+}
+
+.waves__footer {
+  margin-top: -1px;
+  background: url("../img/waves/waves3.png") no-repeat top;
 }
 
 .header {
@@ -950,6 +955,222 @@ body {
 .glasses__item-btn:hover {
   background-color: #26c6da;
   color: #fff;
+}
+
+.reviews {
+  padding-bottom: 100px;
+  background: url("../img/waves/waves2.png") no-repeat bottom;
+}
+
+.reviews__title {
+  color: #26c6da;
+}
+
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe {
+  margin-bottom: 45px;
+}
+
+.subscribe__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__title {
+  margin: 0;
+}
+
+.subscribe__subtitle {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.subscribe__form {
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 475px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.subscribe__input {
+  width: 330px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font: bold 16px/1 "Montserrat", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #9a9a9a;
+}
+
+.subscribe__input::-moz-placeholder {
+  color: #9a9a9a;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+.subscribe__input::placeholder {
+  color: #9a9a9a;
+}
+
+.subscribe__btn {
+  padding: 11px 15px 11px 40px;
+  border-radius: 20px;
+  background-color: #26c6da;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.subscribe__btn:hover {
+  background-color: #1e9faf;
+}
+
+.footer {
+  padding-bottom: 130px;
+}
+
+.footer__logo {
+  width: 252px;
+  height: 78px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 60px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 3fr;
+  margin-bottom: 50px;
+}
+
+.footer__nav li a {
+  font-size: 16px;
+  color: black;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.footer__nav li a:hover {
+  color: #26c6da;
+}
+
+.footer__nav li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__payment {
+  margin-right: 160px;
+}
+
+.footer__payment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__payment ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__contacts {
+  justify-self: flex-end;
+  text-align: right;
+}
+
+.footer__contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__contacts-item ul li:first-child {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.footer__contacts-item ul li:last-child {
+  font-size: 14px;
+}
+
+.footer__contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.site-info {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media (max-width: 767.98px) {
