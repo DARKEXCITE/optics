@@ -49,7 +49,7 @@
                <img class="ico-cart" src="img/icons/basket.png" alt="Корзина">
             </div>
             <img class="ico-heart" src="img/icons/heart.png" alt="Избранное">
-            <img class="ico-user" src="img/icons/user.png" alt="Профиль">
+            <a href="#loginPopup" class="popup-link"><img class="ico-user" src="img/icons/user.png" alt="Профиль"></a>
          </div>
       </div>
 
@@ -94,7 +94,47 @@
             </div>
          </div>
 
-         <input class="input-search" type="text" placeholder="Поиск...">
+         <div class="header__search-wrapper">
+            <input class="header__search" type="text" placeholder="Поиск...">
+
+            <div class="header__search-hint search-hint">
+               <div class="search-hint__catalog">
+                  <div class="search-hint__column">
+                     <h5 class="search-hint__column-title">Очки</h5>
+                     <ul class="search-hint__column-items">
+                        <li><a href="#!">Мужские</a></li>
+                        <li><a href="#!">Водительские</a></li>
+                        <li><a href="#!">Женские</a></li>
+                        <li><a href="#!">Для чтения</a></li>
+                        <li><a href="#!">Детские</a></li>
+                        <li><a href="#!">С диоптриями</a></li>
+                        <li><a href="#!">Солцезащитные</a></li>
+                        <li><a href="#!">Компьютерные</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="search-hint__column">
+                     <h5 class="search-hint__column-title">Оправы</h5>
+                     <ul class="search-hint__column-items">
+                        <li><a href="#!">Мужские</a></li>
+                        <li><a href="#!">Необычные</a></li>
+                        <li><a href="#!">Женские</a></li>
+                        <li><a href="#!">Пластмассовые</a></li>
+                        <li><a href="#!">Детские</a></li>
+                        <li><a href="#!">Алюминиевые</a></li>
+                        <li><a href="#!">Круглые</a></li>
+                        <li><a href="#!">Медицинские</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="search-hint__sections">
+                  <a href="#!"><div class="search-hint__section search-hint__section_lenses"></div></a>
+
+                  <a href="#!"><div class="search-hint__section search-hint__section_cases"></div></a>
+               </div>
+            </div>
+         </div>
       </div>
 
       <div class="header__carousel">
@@ -117,7 +157,9 @@
             <h2 class="header-onscroll__title">Оптика от Глеба</h2>
 
             <div class="header-onscroll__tools">
-               <img class="ico-user_white" src="img/icons/user-white.png" alt="Профиль">
+               <a href="#loginPopup" class="popup-link">
+                  <img class="ico-user_white" src="img/icons/user-white.png" alt="Профиль">
+               </a>
                <img class="ico-heart_white" src="img/icons/heart-white.png" alt="Избранное">
                <div class="header-onscroll__basket">
                   <span>Корзина</span>
@@ -323,6 +365,31 @@
    </div>
 </footer>
    </div>
+   <div class="popup" id="loginPopup">
+   <div class="popup__body">
+      <div class="popup__content login-popup__content">
+         <a href="#!" class="popup__close">
+
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               width="28px" height="28px">
+               <image  x="0px" y="0px" width="28px" height="28px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEUmxtr///8mxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtr///977qU/AAAAMXRSTlMAANDgIRff1vvtIhvkI+7n9Swa5iggGfQrKejzKhgKAtzXC9XYE9IIHOLdEOwk/OPbkfvz3AAAAAFiS0dEAf8CLd4AAAAHdElNRQfkCQMMLRRtTkldAAABBElEQVQoz22T53aDMAxG5UQZEEpI0jY00JE9uqL3f7lY8sCA/Y9zzyf5WgIGQ4TwKHdG4wlMKUljcJYRwVNOCfbhaE7FAgATyrELlysqnpX+fMnDysJeV7QuFUNIw6wwXfNNGQgYZLlmJjkLw776LhuTc5Ar2yw7VLUKoVSW7LvuZ5mHrvJMHLpQjD4+tUOt+pD7fm3dXboQdnuiw1HFIZyIJuc4vGR0vWmjGGSH7zMb9aE4WKMu5DnUzihtQ5mDeb60yRqm51CV7uHRZ81dNi4nI/N9rUNVh8PGxGTdHNprgsbIO7QXDH+4MrN1k/OryUa/UDR3aS217vsH+/8y/jvg9f4AxnkYUyRjC5YAAAAASUVORK5CYII=" />
+            </svg>
+         </a>
+
+         <h3 class="login-popup__title">Вход в личный кабинет</h3>
+
+         <form class="login-popup__form">
+            <input type="email" placeholder="Введите ваш E-MAIL">
+            <input type="password" placeholder="Введите ваш пароль">
+            <input class="login-popup__button" type="button" value="Войти">
+         </form>
+
+         <a class="login-popup__registration" href="#!">Регистрация</a>
+      </div>
+   </div>
+</div>
 
    <script src="libs/jquery.min.js"></script>
    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
