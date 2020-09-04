@@ -1659,6 +1659,157 @@ body.waves {
   text-decoration: underline;
 }
 
+.cb-widget {
+  position: fixed;
+  bottom: -60px;
+  right: -60px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+#cb-icons-bg {
+  opacity: .3;
+  -webkit-transform: scale(0.3) translate(115%, 115%);
+      -ms-transform: scale(0.3) translate(115%, 115%);
+          transform: scale(0.3) translate(115%, 115%);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+svg:hover #cb-icons-bg {
+  -webkit-transform: scale(1) translate(0, 0);
+      -ms-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+}
+
+svg:hover #cb-social-icons {
+  visibility: visible;
+  opacity: 1;
+}
+
+svg:hover #cb-ico-whatsapp {
+  -webkit-transform: translate(-50px, -60px);
+      -ms-transform: translate(-50px, -60px);
+          transform: translate(-50px, -60px);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+svg:hover #cb-ico-viber {
+  -webkit-transform: translate(-80px, 10px);
+      -ms-transform: translate(-80px, 10px);
+          transform: translate(-80px, 10px);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+svg:hover #cb-ico-telegram {
+  -webkit-transform: translate(20px, -80px);
+      -ms-transform: translate(20px, -80px);
+          transform: translate(20px, -80px);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+svg:hover .cb-social-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+svg:hover #cb-loading {
+  opacity: 0;
+}
+
+#cb-social-icons {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.cb-social-icon {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#cb-loading {
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+#cb-loading circle {
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+#cb-loading circle:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#cb-loading circle:last-child {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  10% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  10% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  20% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @media (max-width: 767.98px) {
   .container {
     padding: 0 10px;
