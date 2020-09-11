@@ -3,13 +3,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <title>Оптика от Глеба | Контакты</title>
-   <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
-   <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <title>Оптика от Глеба | Регистрация</title>
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="waves">
-   <header class="header">
+<body>
+<header class="header">
    <div class="container">
       <nav class="header__nav">
          <div class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></div>
@@ -24,7 +22,7 @@
          <div class="logo">
             <img src="img/logo.png" alt="Оптика от Глеба">
          </div>
-         
+
          <div class="header__info-contacts">
             <div class="header__info-contacts__item">
                <img class="ico-pin" src="img/icons/pin.png" alt="г. Москва, Брянская улица 12">
@@ -136,19 +134,6 @@
             </div>
          </div>
       </div>
-
-      <div class="header__carousel">
-         <div class="owl-carousel" id="headerCarousel">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-         </div>
-         
-         <div class="header__carousel-controls">
-            <div class="prev" id="headerSliderPrev"><img src="img/controls/prev.png" alt="Предыдующий слайд"></div>
-            <div class="next" id="headerSliderNext"><img src="img/controls/next.png" alt="Следующий слайд"></div>
-         </div>
-      </div>
    </div>
 
    <div class="header-onscroll hide">
@@ -172,69 +157,98 @@
       </div>
    </div>
 </header>
-   <section class="contacts">
+<section class="cart">
    <div class="container">
-      <h3 class="contacts__title section__title">Контакты</h3>
-      <div class="contacts__wrapper">
+      <h3 class="cart__title section__title">Корзина</h3>
+      <h4 class="cart__subtitle section__title">Товаров: <span id="productsCount">0</span></h4>
 
-         <div class="contacts__phones">
-            <div class="contacts__phones-heading">
-               <img src="img/icons/phone.png"
-                    alt="Звоните нам, мы ответим на любой Ваш вопрос">
-               <p>Звоните нам, мы ответим на любой ваш вопрос:</p>
+      <div class="cart__products">
+         <div class="cart__product">
+            <div class="cart__product-thumb">
+               <img src="img/recommendation/glasses1.jpg" alt="Очки">
+               <img class="in-favorites" src="img/icons/heart-orange.png" alt="В избраном">
             </div>
-            
-            <div class="contacts__phones-numbers">
-               <ul>
-                  <li>+7 (800) 775-17-91</li>
-                  <li>+7 (495) 641-88-66</li>
-                  <li>+7 (926) 438-26-85</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__phones-address">
-               <p>Наш адрес: г.Москва, ул.Брянская, д.12</p>
-            </div>
-         </div>
-         
-         <div class="contacts__wa">
-            <div class="contacts__wa-heading">
-               <img src="img/icons/whatsapp.png" alt="WhatsApp">
-               <span class="contacts__wa-title">WhatsApp:</span>
-            </div>
-            
-            <ul class="contacts__wa-numbers">
-               <li>+7 (929) 920-79-59</li>
-               <li>+7 (926) 353-74-31</li>
-               <li>+7 (977) 343-65-43</li>
-               <li>+7 (926) 438-26-85</li>
+            <ul class="cart__product-desc">
+               <li>Очки ЕАЕ</li>
+               <li>720 руб.</li>
+               <li>Модель: В543С1</li>
             </ul>
-         </div>
-         
-         <div class="contacts__info">
-            <div class="contacts__info-item">
-               <img src="img/icons/clock.png" alt="График работы магазина">
-               <ul>
-                  <li>График работы магазина:</li>
-                  <li>Ежедневно с 10:00 до 21:00.</li>
-               </ul>
+            <div class="cart__product-remove__wrapper">
+               <a href="#!" class="cart__product-remove">Удалить</a>
             </div>
-            
-            <div class="contacts__info-item">
-               <img src="img/icons/mail.png" alt="Адрес электронной почты">
-               <ul>
-                  <li>Адрес электронной почты:</li>
-                  <li>seyyidgalib@yandex.ru</li>
-               </ul>
+         </div>
+         <div class="cart__product">
+            <div class="cart__product-thumb">
+               <img src="img/recommendation/glasses1.jpg" alt="Очки">
+               <img class="in-favorites" src="img/icons/heart-orange.png" alt="В избраном">
+            </div>
+            <ul class="cart__product-desc">
+               <li>Очки ЕАЕ</li>
+               <li>720 руб.</li>
+               <li>Модель: В543С1</li>
+            </ul>
+            <div class="cart__product-remove__wrapper">
+               <a href="#!" class="cart__product-remove">Удалить</a>
+            </div>
+         </div>
+         <div class="cart__product">
+            <div class="cart__product-thumb">
+               <img src="img/recommendation/glasses1.jpg" alt="Очки">
+               <img class="in-favorites" src="img/icons/heart-orange.png" alt="В избраном">
+            </div>
+            <ul class="cart__product-desc">
+               <li>Очки ЕАЕ</li>
+               <li>720 руб.</li>
+               <li>Модель: В543С1</li>
+            </ul>
+            <div class="cart__product-remove__wrapper">
+               <a href="#!" class="cart__product-remove">Удалить</a>
+            </div>
+         </div>
+         <div class="cart__product">
+            <div class="cart__product-thumb">
+               <img src="img/recommendation/glasses1.jpg" alt="Очки">
+               <img class="in-favorites" src="img/icons/heart-orange.png" alt="В избраном">
+            </div>
+            <ul class="cart__product-desc">
+               <li>Очки ЕАЕ</li>
+               <li>720 руб.</li>
+               <li>Модель: В543С1</li>
+            </ul>
+            <div class="cart__product-remove__wrapper">
+               <a href="#!" class="cart__product-remove">Удалить</a>
+            </div>
+         </div>
+         <div class="cart__product">
+            <div class="cart__product-thumb">
+               <img src="img/recommendation/glasses1.jpg" alt="Очки">
+               <img class="in-favorites" src="img/icons/heart-orange.png" alt="В избраном">
+            </div>
+            <ul class="cart__product-desc">
+               <li>Очки ЕАЕ</li>
+               <li>720 руб.</li>
+               <li>Модель: В543С1</li>
+            </ul>
+            <div class="cart__product-remove__wrapper">
+               <a href="#!" class="cart__product-remove">Удалить</a>
             </div>
          </div>
       </div>
-      <div class="contacts__map">
-         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A895215babeec0150a19d17e6190c07858304b6291b91c227f9225b144f07345b&amp;source=constructor"></iframe>
-      </div>
+
+      <a href="#!" class="cart__checkout">Оформить заказ</a>
    </div>
 </section>
-   <footer class="footer">
+
+
+<script>
+   const count = document.querySelectorAll('.cart__product').length
+   document.getElementById('productsCount').innerText = count
+
+   if (count === 0) {
+       document.querySelector('.cart__checkout').style.display = 'none'
+   }
+</script>
+<footer class="footer">
    <div class="container">
       <div class="footer__wrapper">
          <img src="img/logo.png" alt="Оптика от Глеба" class="footer__logo">
@@ -298,7 +312,7 @@
       </div>
    </div>
 </footer>
-   <div class="popup" id="loginPopup">
+<div class="popup" id="loginPopup">
    <div class="popup__body">
       <div class="popup__content login-popup__content">
          <a href="#!" class="popup__close">
@@ -324,11 +338,7 @@
    </div>
 </div>
 
-
-   <script src="libs/jquery.min.js"></script>
-   <script src="libs/owlcarousel/owl.carousel.min.js"></script>
-   <script src="js/header.min.js"></script>
-   <script src="js/header-carousel.min.js"></script>
-   <script src="js/popups.min.js"></script>
+<script src="js/header.min.js"></script>
+<script src="js/popups.min.js"></script>
 </body>
 </html>

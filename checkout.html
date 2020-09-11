@@ -3,13 +3,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <title>Оптика от Глеба | Контакты</title>
-   <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
-   <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <title>Оптика от Глеба | Оформление заказа</title>
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="waves">
-   <header class="header">
+<body>
+<header class="header">
    <div class="container">
       <nav class="header__nav">
          <div class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></div>
@@ -24,7 +22,7 @@
          <div class="logo">
             <img src="img/logo.png" alt="Оптика от Глеба">
          </div>
-         
+
          <div class="header__info-contacts">
             <div class="header__info-contacts__item">
                <img class="ico-pin" src="img/icons/pin.png" alt="г. Москва, Брянская улица 12">
@@ -136,19 +134,6 @@
             </div>
          </div>
       </div>
-
-      <div class="header__carousel">
-         <div class="owl-carousel" id="headerCarousel">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-         </div>
-         
-         <div class="header__carousel-controls">
-            <div class="prev" id="headerSliderPrev"><img src="img/controls/prev.png" alt="Предыдующий слайд"></div>
-            <div class="next" id="headerSliderNext"><img src="img/controls/next.png" alt="Следующий слайд"></div>
-         </div>
-      </div>
    </div>
 
    <div class="header-onscroll hide">
@@ -172,69 +157,183 @@
       </div>
    </div>
 </header>
-   <section class="contacts">
+<section class="checkout">
    <div class="container">
-      <h3 class="contacts__title section__title">Контакты</h3>
-      <div class="contacts__wrapper">
+      <div class="checkout__title section__title">
+         Оформление заказа
+      </div>
 
-         <div class="contacts__phones">
-            <div class="contacts__phones-heading">
-               <img src="img/icons/phone.png"
-                    alt="Звоните нам, мы ответим на любой Ваш вопрос">
-               <p>Звоните нам, мы ответим на любой ваш вопрос:</p>
-            </div>
-            
-            <div class="contacts__phones-numbers">
-               <ul>
-                  <li>+7 (800) 775-17-91</li>
-                  <li>+7 (495) 641-88-66</li>
-                  <li>+7 (926) 438-26-85</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__phones-address">
-               <p>Наш адрес: г.Москва, ул.Брянская, д.12</p>
-            </div>
-         </div>
-         
-         <div class="contacts__wa">
-            <div class="contacts__wa-heading">
-               <img src="img/icons/whatsapp.png" alt="WhatsApp">
-               <span class="contacts__wa-title">WhatsApp:</span>
-            </div>
-            
-            <ul class="contacts__wa-numbers">
-               <li>+7 (929) 920-79-59</li>
-               <li>+7 (926) 353-74-31</li>
-               <li>+7 (977) 343-65-43</li>
-               <li>+7 (926) 438-26-85</li>
-            </ul>
-         </div>
-         
-         <div class="contacts__info">
-            <div class="contacts__info-item">
-               <img src="img/icons/clock.png" alt="График работы магазина">
-               <ul>
-                  <li>График работы магазина:</li>
-                  <li>Ежедневно с 10:00 до 21:00.</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__info-item">
-               <img src="img/icons/mail.png" alt="Адрес электронной почты">
-               <ul>
-                  <li>Адрес электронной почты:</li>
-                  <li>seyyidgalib@yandex.ru</li>
-               </ul>
+         <div class="checkout__tab order-way">
+            <a href="#orderWay" class="checkout__tab-title"><h4>Шаг 1: Способ оформления заказа</h4></a>
+
+            <div class="checkout__tab-body order-way__body" id="orderWay">
+               <div class="order-way__new-user">
+                  <h5 class="order-way__title">Новый покупатель</h5>
+                  <form class="new-user__form">
+                     <div class="new-user__form-group">
+                        <input type="radio" name="radioRegistration" id="radioWithRegistration">
+                        <label for="radioWithRegistration" class="new-user__radio">Регистрация</label>
+                     </div>
+
+                     <div class="new-user__form-group">
+                        <input type="radio" name="radioRegistration" id="radioWithoutRegistration">
+                        <label for="radioWithoutRegistration" class="new-user__radio">Купить без регистрации</label>
+                     </div>
+
+                     <a href="#!" class="continue__btn">Продолжить</a>
+                  </form>
+               </div>
+
+               <div class="order-way__old-user">
+                  <h5 class="order-way__title">Зарегестрированный пользователь</h5>
+
+                  <form class="old-user__form">
+                     <input class="old-user__input" type="email" placeholder="Введите ваш e-mail">
+                     <input class="old-user__input" type="password" placeholder="Введите ваш пароль">
+                     <input type="submit" value="Войти" class="old-user__form-btn">
+                  </form>
+               </div>
             </div>
          </div>
-      </div>
-      <div class="contacts__map">
-         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A895215babeec0150a19d17e6190c07858304b6291b91c227f9225b144f07345b&amp;source=constructor"></iframe>
-      </div>
+
+         <div class="checkout__tab payment-info">
+            <a href="#paymentInfo" class="checkout__tab-title"><h4>Шаг 2: Платежная информация и адрес доставки</h4></a>
+
+            <div class="checkout__tab-body payment-info__body" id="paymentInfo">
+               <form class="payment-info__form">
+                  <div class="payment-info__form-row">
+                     <div class="payment-info__form-column">
+                        <h5 class="payment-info__form-title">Личные данные</h5>
+
+                        <label for="userName">Имя, Отчество</label>
+                        <input type="text" id="userName" name="userName">
+
+                        <label for="userSurname">Фамилия</label>
+                        <input type="text" id="userSurname" name="userSurname">
+
+                        <label for="userIndex">Индекс</label>
+                        <input type="number" id="userIndex" name="userIndex">
+
+                        <label for="userPhone">Индекс</label>
+                        <input type="number" id="userPhone" name="userPhone">
+                     </div>
+
+                     <div class="payment-info__form-column">
+                        <h5 class="payment-info__form-title">Адрес</h5>
+
+                        <label for="userCountry">Страна</label>
+                        <select name="userCountry" id="userCountry">
+                           <option value="russia">Россия</option>
+                           <option value="ukraine">Украина</option>
+                           <option value="belarus">Беларусь</option>
+                        </select>
+
+                        <label for="userRegion">Регион / Область</label>
+                        <select name="userRegion" id="userRegion">
+                           <option value="crimea">Крым</option>
+                        </select>
+
+                        <label for="userCity">Город</label>
+                        <select name="userCity" id="userCity">
+                           <option value="sevastopol">Севастополь</option>
+                        </select>
+
+                        <label for="userAddress">Адрес</label>
+                        <input type="text" name="userAddress" id="userAddress">
+                     </div>
+                  </div>
+
+                  <a href="#!" class="continue__btn" style="margin: 35px auto 0;">Продолжить</a>
+               </form>
+            </div>
+         </div>
+
+         <div class="checkout__tab delivery-method">
+            <a href="#deliveryMethod" class="checkout__tab-title"><h4>Шаг 3: Способ доставки</h4></a>
+
+            <div class="checkout__tab-body delivery-method__body" id="deliveryMethod">
+               <span>Выберите удобный способ доставки для этого заказа:</span>
+
+               <h5 class="delivery-method__title">Способ доставки</h5>
+
+               <div class="delivery-method__columns">
+                  <form class="delivery-method__form">
+                     <input type="radio" name="deliveryMethod" id="deliveryMethodMO">
+                     <label for="deliveryMethodMO">Почта МО (по московской области)</label>
+
+                     <input type="radio" name="deliveryMethod" id="deliveryMethodPR">
+                     <label for="deliveryMethodPR">Почта России (по регионам)</label>
+
+                     <input type="radio" name="deliveryMethod" id="deliveryMethodWO">
+                     <label for="deliveryMethodWO">Самовывоз (Москва)</label>
+                  </form>
+
+                  <ul>
+                     <li>200 руб.</li>
+                     <li>350 руб.</li>
+                     <li>Бесплатно</li>
+                  </ul>
+               </div>
+
+               <a href="#!" class="continue__btn" style="margin-left: 120px;">Продолжить</a>
+            </div>
+         </div>
+
+         <div class="checkout__tab payment-method">
+            <a href="#paymentMethod" class="checkout__tab-title"><h4>Шаг 4: Способ оплаты</h4></a>
+
+            <div class="checkout__tab-body payment-method__body" id="paymentMethod">
+               <span class="payment-method__title">Выберите способ оплаты для этого заказа:</span>
+
+               <form class="payment-method__form">
+                  <input type="radio" name="paymentMethodRadio" id="paymentMethodRadio">
+                  <label for="paymentMethodRadio">Оплата при  доставке</label>
+
+                  <label for="userComment">Вы можете добавить комментарий к своему заказу:</label>
+                  <textarea name="userComment" id="userComment"></textarea>
+               </form>
+
+               <a href="#!" class="continue__btn">Продолжить</a>
+            </div>
+         </div>
+
+         <div class="checkout__tab order-confirm">
+            <a href="#orderConfirm" class="checkout__tab-title"><h4>Шаг 5: Подтверждение заказа</h4></a>
+
+            <div class="checkout__tab-body order-confirm__body" id="orderConfirm">
+               <div class="order-confirm__table">
+                  <ul>
+                     <li>Наименование товара</li>
+                     <li>Оправа Bellessa</li>
+                  </ul>
+                  <ul>
+                     <li>Модель</li>
+                     <li>SB-XSA3093 C3</li>
+                  </ul>
+                  <ul>
+                     <li>Кол-во</li>
+                     <li>1</li>
+                  </ul>
+                  <ul>
+                     <li>Цена</li>
+                     <li>2800 руб.</li>
+                  </ul>
+                  <ul>
+                     <li>Доставка</li>
+                     <li>350 руб.</li>
+                  </ul>
+                  <ul>
+                     <li>Итого</li>
+                     <li>3150 руб.</li>
+                  </ul>
+               </div>
+
+               <input class="checkout__submit-form" type="submit" value="Подтвердить заказ">
+            </div>
+         </div>
    </div>
 </section>
-   <footer class="footer">
+<footer class="footer">
    <div class="container">
       <div class="footer__wrapper">
          <img src="img/logo.png" alt="Оптика от Глеба" class="footer__logo">
@@ -298,7 +397,7 @@
       </div>
    </div>
 </footer>
-   <div class="popup" id="loginPopup">
+<div class="popup" id="loginPopup">
    <div class="popup__body">
       <div class="popup__content login-popup__content">
          <a href="#!" class="popup__close">
@@ -324,11 +423,8 @@
    </div>
 </div>
 
-
-   <script src="libs/jquery.min.js"></script>
-   <script src="libs/owlcarousel/owl.carousel.min.js"></script>
-   <script src="js/header.min.js"></script>
-   <script src="js/header-carousel.min.js"></script>
-   <script src="js/popups.min.js"></script>
+<script src="js/header.min.js"></script>
+<script src="js/popups.min.js"></script>
+<script src="js/checkout-tabs.min.js"></script>
 </body>
 </html>

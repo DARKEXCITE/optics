@@ -3,13 +3,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <title>Оптика от Глеба | Контакты</title>
-   <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
-   <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <title>Оптика от Глеба | Главная</title>
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="waves">
-   <header class="header">
+<body>
+
+   <div class="waves waves__shares">
+      <header class="header">
    <div class="container">
       <nav class="header__nav">
          <div class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></div>
@@ -24,7 +24,7 @@
          <div class="logo">
             <img src="img/logo.png" alt="Оптика от Глеба">
          </div>
-         
+
          <div class="header__info-contacts">
             <div class="header__info-contacts__item">
                <img class="ico-pin" src="img/icons/pin.png" alt="г. Москва, Брянская улица 12">
@@ -136,19 +136,6 @@
             </div>
          </div>
       </div>
-
-      <div class="header__carousel">
-         <div class="owl-carousel" id="headerCarousel">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-         </div>
-         
-         <div class="header__carousel-controls">
-            <div class="prev" id="headerSliderPrev"><img src="img/controls/prev.png" alt="Предыдующий слайд"></div>
-            <div class="next" id="headerSliderNext"><img src="img/controls/next.png" alt="Следующий слайд"></div>
-         </div>
-      </div>
    </div>
 
    <div class="header-onscroll hide">
@@ -172,69 +159,24 @@
       </div>
    </div>
 </header>
-   <section class="contacts">
-   <div class="container">
-      <h3 class="contacts__title section__title">Контакты</h3>
-      <div class="contacts__wrapper">
+      <section class="shares">
+         <div class="shares__container">
+            <h3 class="section__title shares__title">Акции</h3>
 
-         <div class="contacts__phones">
-            <div class="contacts__phones-heading">
-               <img src="img/icons/phone.png"
-                    alt="Звоните нам, мы ответим на любой Ваш вопрос">
-               <p>Звоните нам, мы ответим на любой ваш вопрос:</p>
+            <div class="stock" style="background-image: url('img/shares/stock1.jpg');">
+               <h4 class="stock__title">Акции в 14 февраля</h4>
             </div>
-            
-            <div class="contacts__phones-numbers">
-               <ul>
-                  <li>+7 (800) 775-17-91</li>
-                  <li>+7 (495) 641-88-66</li>
-                  <li>+7 (926) 438-26-85</li>
-               </ul>
+
+            <div class="stock" style="background-image: url('img/shares/stock2.jpg');">
+               <h4 class="stock__title">ДЛЯ ПРЕКРАСНЫХ ДАМ СКИДКА 20% НА ВСЕ ВИДЫ ОПРАВ С 6 ПО 18 МАРТА!</h4>
             </div>
-            
-            <div class="contacts__phones-address">
-               <p>Наш адрес: г.Москва, ул.Брянская, д.12</p>
+
+            <div class="stock" style="background-image: url('img/shares/stock3.jpg');">
+               <h4 class="stock__title">СКИДКА ПРИ ЗАКАЗЕ ЧЕРЕЗ ПОЧТУ РОССИИ <strong>10%</strong></h4>
             </div>
          </div>
-         
-         <div class="contacts__wa">
-            <div class="contacts__wa-heading">
-               <img src="img/icons/whatsapp.png" alt="WhatsApp">
-               <span class="contacts__wa-title">WhatsApp:</span>
-            </div>
-            
-            <ul class="contacts__wa-numbers">
-               <li>+7 (929) 920-79-59</li>
-               <li>+7 (926) 353-74-31</li>
-               <li>+7 (977) 343-65-43</li>
-               <li>+7 (926) 438-26-85</li>
-            </ul>
-         </div>
-         
-         <div class="contacts__info">
-            <div class="contacts__info-item">
-               <img src="img/icons/clock.png" alt="График работы магазина">
-               <ul>
-                  <li>График работы магазина:</li>
-                  <li>Ежедневно с 10:00 до 21:00.</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__info-item">
-               <img src="img/icons/mail.png" alt="Адрес электронной почты">
-               <ul>
-                  <li>Адрес электронной почты:</li>
-                  <li>seyyidgalib@yandex.ru</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <div class="contacts__map">
-         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A895215babeec0150a19d17e6190c07858304b6291b91c227f9225b144f07345b&amp;source=constructor"></iframe>
-      </div>
-   </div>
-</section>
-   <footer class="footer">
+      </section>
+      <footer class="footer">
    <div class="container">
       <div class="footer__wrapper">
          <img src="img/logo.png" alt="Оптика от Глеба" class="footer__logo">
@@ -298,7 +240,7 @@
       </div>
    </div>
 </footer>
-   <div class="popup" id="loginPopup">
+      <div class="popup" id="loginPopup">
    <div class="popup__body">
       <div class="popup__content login-popup__content">
          <a href="#!" class="popup__close">
@@ -323,12 +265,9 @@
       </div>
    </div>
 </div>
+   </div>
 
-
-   <script src="libs/jquery.min.js"></script>
-   <script src="libs/owlcarousel/owl.carousel.min.js"></script>
-   <script src="js/header.min.js"></script>
-   <script src="js/header-carousel.min.js"></script>
-   <script src="js/popups.min.js"></script>
+<script src="js/header.min.js"></script>
+<script src="js/popups.min.js"></script>
 </body>
 </html>

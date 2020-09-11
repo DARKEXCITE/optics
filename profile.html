@@ -3,13 +3,13 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <title>Оптика от Глеба | Контакты</title>
+   <title>Оптика от Глеба | Личный кабинет</title>
    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
    <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="waves">
-   <header class="header">
+<body>
+<header class="header">
    <div class="container">
       <nav class="header__nav">
          <div class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></div>
@@ -24,7 +24,7 @@
          <div class="logo">
             <img src="img/logo.png" alt="Оптика от Глеба">
          </div>
-         
+
          <div class="header__info-contacts">
             <div class="header__info-contacts__item">
                <img class="ico-pin" src="img/icons/pin.png" alt="г. Москва, Брянская улица 12">
@@ -136,19 +136,6 @@
             </div>
          </div>
       </div>
-
-      <div class="header__carousel">
-         <div class="owl-carousel" id="headerCarousel">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-            <img src="img/header/banner.png" alt="Оправы за 800 рублей">
-         </div>
-         
-         <div class="header__carousel-controls">
-            <div class="prev" id="headerSliderPrev"><img src="img/controls/prev.png" alt="Предыдующий слайд"></div>
-            <div class="next" id="headerSliderNext"><img src="img/controls/next.png" alt="Следующий слайд"></div>
-         </div>
-      </div>
    </div>
 
    <div class="header-onscroll hide">
@@ -172,69 +159,39 @@
       </div>
    </div>
 </header>
-   <section class="contacts">
+<section class="profile">
    <div class="container">
-      <h3 class="contacts__title section__title">Контакты</h3>
-      <div class="contacts__wrapper">
+      <h3 class="section__title profile__title">Личный кабинет</h3>
+      <div class="profile__container">
+         <div class="profile__tabs">
+            <a href="#!" class="profile__tab">Учётная запись</a>
+            <a href="#!" class="profile__tab">Мои заказы</a>
+            <a href="#logoutPopup" class="profile__tab popup-link">Выйти</a>
+         </div>
 
-         <div class="contacts__phones">
-            <div class="contacts__phones-heading">
-               <img src="img/icons/phone.png"
-                    alt="Звоните нам, мы ответим на любой Ваш вопрос">
-               <p>Звоните нам, мы ответим на любой ваш вопрос:</p>
-            </div>
-            
-            <div class="contacts__phones-numbers">
-               <ul>
-                  <li>+7 (800) 775-17-91</li>
-                  <li>+7 (495) 641-88-66</li>
-                  <li>+7 (926) 438-26-85</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__phones-address">
-               <p>Наш адрес: г.Москва, ул.Брянская, д.12</p>
-            </div>
-         </div>
-         
-         <div class="contacts__wa">
-            <div class="contacts__wa-heading">
-               <img src="img/icons/whatsapp.png" alt="WhatsApp">
-               <span class="contacts__wa-title">WhatsApp:</span>
-            </div>
-            
-            <ul class="contacts__wa-numbers">
-               <li>+7 (929) 920-79-59</li>
-               <li>+7 (926) 353-74-31</li>
-               <li>+7 (977) 343-65-43</li>
-               <li>+7 (926) 438-26-85</li>
-            </ul>
-         </div>
-         
-         <div class="contacts__info">
-            <div class="contacts__info-item">
-               <img src="img/icons/clock.png" alt="График работы магазина">
-               <ul>
-                  <li>График работы магазина:</li>
-                  <li>Ежедневно с 10:00 до 21:00.</li>
-               </ul>
-            </div>
-            
-            <div class="contacts__info-item">
-               <img src="img/icons/mail.png" alt="Адрес электронной почты">
-               <ul>
-                  <li>Адрес электронной почты:</li>
-                  <li>seyyidgalib@yandex.ru</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <div class="contacts__map">
-         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A895215babeec0150a19d17e6190c07858304b6291b91c227f9225b144f07345b&amp;source=constructor"></iframe>
+         <ul class="profile__info">
+            <li>Иванов Иван</li>
+            <li>+7 (999) 999 99 99</li>
+            <li>г. Краснодар, ул. Красная, д. 176</li>
+            <li>ivanov.ivan@gmail.com</li>
+         </ul>
+
+         <img class="profile__avatar" src="img/icons/userAvatar.png" alt="Аватар">
       </div>
    </div>
 </section>
-   <footer class="footer">
+<div class="popup" id="logoutPopup">
+   <div class="popup__body">
+      <div class="popup__content logout-popup__content">
+         <h3 class="logout-popup__title">Уверены, что хотите выйти?</h3>
+         <div class="logout-popup__btns">
+            <a href="#!" class="popup__close popup__close_btn">Да</a>
+            <a href="#!" class="popup__close popup__close_btn">Отмена</a>
+         </div>
+      </div>
+   </div>
+</div>
+<footer class="footer">
    <div class="container">
       <div class="footer__wrapper">
          <img src="img/logo.png" alt="Оптика от Глеба" class="footer__logo">
@@ -298,37 +255,10 @@
       </div>
    </div>
 </footer>
-   <div class="popup" id="loginPopup">
-   <div class="popup__body">
-      <div class="popup__content login-popup__content">
-         <a href="#!" class="popup__close">
 
-            <svg
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               width="28px" height="28px">
-               <image  x="0px" y="0px" width="28px" height="28px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEUmxtr///8mxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtomxtr///977qU/AAAAMXRSTlMAANDgIRff1vvtIhvkI+7n9Swa5iggGfQrKejzKhgKAtzXC9XYE9IIHOLdEOwk/OPbkfvz3AAAAAFiS0dEAf8CLd4AAAAHdElNRQfkCQMMLRRtTkldAAABBElEQVQoz22T53aDMAxG5UQZEEpI0jY00JE9uqL3f7lY8sCA/Y9zzyf5WgIGQ4TwKHdG4wlMKUljcJYRwVNOCfbhaE7FAgATyrELlysqnpX+fMnDysJeV7QuFUNIw6wwXfNNGQgYZLlmJjkLw776LhuTc5Ar2yw7VLUKoVSW7LvuZ5mHrvJMHLpQjD4+tUOt+pD7fm3dXboQdnuiw1HFIZyIJuc4vGR0vWmjGGSH7zMb9aE4WKMu5DnUzihtQ5mDeb60yRqm51CV7uHRZ81dNi4nI/N9rUNVh8PGxGTdHNprgsbIO7QXDH+4MrN1k/OryUa/UDR3aS217vsH+/8y/jvg9f4AxnkYUyRjC5YAAAAASUVORK5CYII=" />
-            </svg>
-         </a>
-
-         <h3 class="login-popup__title">Вход в личный кабинет</h3>
-
-         <form class="login-popup__form">
-            <input type="email" placeholder="Введите ваш E-MAIL">
-            <input type="password" placeholder="Введите ваш пароль">
-            <input class="login-popup__button" type="button" value="Войти">
-         </form>
-
-         <a class="login-popup__registration" href="registration.html">Регистрация</a>
-      </div>
-   </div>
-</div>
-
-
-   <script src="libs/jquery.min.js"></script>
-   <script src="libs/owlcarousel/owl.carousel.min.js"></script>
-   <script src="js/header.min.js"></script>
-   <script src="js/header-carousel.min.js"></script>
-   <script src="js/popups.min.js"></script>
+<script src="libs/jquery.min.js"></script>
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/header.min.js"></script>
+<script src="js/popups.min.js"></script>
 </body>
 </html>
